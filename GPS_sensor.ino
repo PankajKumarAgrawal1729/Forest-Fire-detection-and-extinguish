@@ -1,7 +1,5 @@
-#include <LiquidCrystal.h>
 #include <SoftwareSerial.h>
 #include <TinyGPS.h>
-//long   lat,lon; // create variable for latitude and longitude object
 float lat ,lon ; // create variable for latitude and longitude object
 SoftwareSerial gpsSerial(3,4);//rx,tx
 LiquidCrystal lcd(A0,A1,A2,A3,A4,A5);
