@@ -1,4 +1,4 @@
-
+# include <SoftwareSerial.h>
 #include <TinyGPS.h>
 float lat ,lon ; // create variable for latitude and longitude object
 SoftwareSerial gpsSerial(3,4);//rx,tx
