@@ -1,9 +1,12 @@
 # include <SoftwareSerial.h>
+#include <ESP8266WiFi.h>
 #include <TinyGPS.h>
 #include <DHT.h>        // including the library of DHT11 temperature and humidity sensor
 #define DHTTYPE DHT11   // DHT 11 #define dht_dpin 0
 # define dht_dpin 0
-
+char auth[] = "YourAuthToken";
+char ssid[] = "YourNetworkName";
+char pass[] = "YourPassword";
 float lat ,lon ; // create variable for latitude and longitude object
 SoftwareSerial gpsSerial(3,4);//rx,tx
 TinyGPS gps; // create gps object
