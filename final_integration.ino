@@ -5,7 +5,6 @@
 #define DHTTYPE DHT11   // DHT 11 #define dht_dpin 0
 # define dht_dpin 0
 char auth[] = "YourAuthToken";
-char ssid[] = "YourNetworkName";
 char pass[] = "YourPassword";
 float lat ,lon ; // create variable for latitude and longitude object
 SoftwareSerial gpsSerial(3,4);//rx,tx
@@ -37,7 +36,7 @@ void setup()
     
     Serial.println("The GPS Received Signal:");
     //gpsSerial.begin(9600); // connect gps sensor
-
+    Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH); 
     delay(900);
    
 }
