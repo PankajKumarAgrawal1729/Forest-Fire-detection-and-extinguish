@@ -17,5 +17,5 @@ Serial.print("%  ");
 Serial.print("temperature = "); 
 Serial.print(t);   
 Serial.println("C");  
-delay(800);
+delay(900);
 } 
