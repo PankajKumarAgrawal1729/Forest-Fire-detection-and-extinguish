@@ -35,7 +35,7 @@ void setup()
     Serial.println("The GPS Received Signal:");
     //gpsSerial.begin(9600); // connect gps sensor
 
-    delay(700);
+    delay(900);
    
 }
 void loop()
