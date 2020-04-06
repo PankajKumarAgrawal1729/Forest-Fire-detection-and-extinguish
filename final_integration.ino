@@ -68,6 +68,7 @@ else
 }
 delay(100);
 // for dht11
+float th = 50;    
 float h = dht.readHumidity();    
 float t = dht.readTemperature();
 Serial.print("Current humidity = ");
@@ -75,7 +76,10 @@ Serial.print(h);
 Serial.print("%  ");
 Serial.print("temperature = "); 
 Serial.print(t);   
-Serial.println("C");  
+Serial.println("C");
+if(t>th){
+    Serial.print("Worries");
+}
 delay(900);
 //Serial.println("Flame is")
 while(gpsSerial.available()){ // check for gps data
