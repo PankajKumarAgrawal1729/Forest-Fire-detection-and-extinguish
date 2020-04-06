@@ -76,7 +76,7 @@ Serial.print("%  ");
 Serial.print("temperature = "); 
 Serial.print(t);   
 Serial.println("C");  
-delay(800);
+delay(900);
 //Serial.println("Flame is")
 while(gpsSerial.available()){ // check for gps data
 if(gps.encode(gpsSerial.read()))// encode gps data
