@@ -8,7 +8,7 @@ float lat ,lon ; // create variable for latitude and longitude object
 SoftwareSerial gpsSerial(3,4);//rx,tx
 TinyGPS gps; // create gps object
 int flamePin = 11;
-int Flame = HIGH;
+int Flame = LOW;
 int flag1=0;
 int flag2=0;
 // for gas
@@ -41,7 +41,7 @@ void setup()
 void loop()
 {
 Flame = digitalRead(flamePin);
-if (Flame== LOW && flag1==0){
+if (Flame== HIGH && flag1==0){
 Serial.println("Fire!!!");
 flag1 = 1;
 } 
